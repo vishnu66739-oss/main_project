@@ -5,7 +5,7 @@ import joblib
 import base64
 
 
-model = joblib.load("logreg_model.pkl")
+model = joblib.load("heart.pkl")
 scaler = joblib.load("scaler.pkl")
 columns = joblib.load("column.pkl")
 
