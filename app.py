@@ -11,34 +11,33 @@ columns = joblib.load("column.pkl")
 
 
 
-# def set_bg_image(image_file):
-#     with open(image_file, "rb") as img:
-#         encoded = base64.b64encode(img.read()).decode()
+def set_bg_image(image_file):
+    with open(image_file, "rb") as img:
+        encoded = base64.b64encode(img.read()).decode()
 
-#     st.markdown(
-#         f"""
-#         <style>
-#         .stApp {{
-#             background-image: url("data:image/jpg;base64,{encoded}");
-#             background-size: cover;
-#             background-position: center;
-#             background-repeat: no-repeat;
-#         }}
-#         </style>
-#         """,
-#         unsafe_allow_html=True
-#     )
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/jpg;base64,{encoded}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 
-# set_bg_image("Cool-Gym-Wallpaper-HD.jpg")
+set_bg_image("2521967.jpg")
 
 
 import streamlit as st
 
 st.markdown("""
-<style>
+<style>r
 
-/* ===== Global Input Styling ===== */
 input, textarea {
     background-color: #0f172a !important;
     color: #ffffff !important;
@@ -46,13 +45,12 @@ input, textarea {
     border-radius: 8px !important;
 }
 
-/* ===== Number Input Arrows ===== */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     opacity: 1;
 }
 
-/* ===== Selectbox & Multiselect ===== */
+
 div[data-baseweb="select"] {
     background-color: #0f172a !important;
     border-radius: 8px !important;
@@ -60,7 +58,7 @@ div[data-baseweb="select"] {
     color: white !important;
 }
 
-/* ===== Slider ===== */
+
 div[data-baseweb="slider"] > div > div {
     background: linear-gradient(to right, #38bdf8, #22c55e) !important;
 }
@@ -70,13 +68,13 @@ div[data-baseweb="slider"] span {
     border-color: #38bdf8 !important;
 }
 
-/* ===== Checkbox & Radio ===== */
+
 div[data-baseweb="checkbox"] span,
 div[data-baseweb="radio"] span {
     background-color: #38bdf8 !important;
 }
 
-/* ===== Buttons ===== */
+
 .stButton > button {
     background-color: #38bdf8;
     color: black;
